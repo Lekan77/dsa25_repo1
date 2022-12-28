@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+    tools {
+        maven "MAVEN3"
+        jdk "OracleJDK8"
+    }
+
+    stages{
+        stage ('Build'){
+            steps{
+                echo "This is my build practice to intiate git webhooks"
+            }
+        }
+
+        stage ('cloning_repo'){
+            steps{
+                git branch: 'vp-rem', url:'https://github.com/devopshydclub/vprofile-repo.git'
+            }
+        }
+    }
+}
