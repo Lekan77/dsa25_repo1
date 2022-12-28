@@ -8,7 +8,7 @@ pipeline {
     stages{
         stage ('Build'){
             steps{
-                echo "This is my build practice to intiate git webhooks"
+                echo "This is my build practice to intiate git webhooks!"
             }
         }
 
